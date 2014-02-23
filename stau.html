@@ -1,24 +1,19 @@
 <html lang="en"><head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
-
+  <link rel="icon" href="img/favicon.ico">
 	<!-- FACEBOOK MARKUP -->
 	<meta property="og:url" content="http://www.smallthings-addup.com/">
 	<meta property="og:title" content="STAU - Small Things Add Up">
 	<meta property="og:description" content="We are students from Virginia Tech and we will leave a mark on this society.">
 	
-	<title>VTHacks - Student Hackathon at Virginia Tech</title>
+	<title>STAU - Small Things Add Up</title>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">	
 	<link rel="stylesheet" type="text/css" href="css/social-icons.css">
-	<link rel="icon" type="image/png" href="img/thumbnail.png">
-	<!-- 
-	<script id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js#xfbml=1"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><style type="text/css"></style><style type="text/css"></style> -->
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 	  function normalizeImageRow() {
 	    var maxHeight = -1;
@@ -32,102 +27,10 @@
 		  $(this).css( "margin-top", margin+'px' );
    		});
 	  }
-	  /*
-	  function moveInfoTextToLogoTip() {
-	  	if ($(window).width() < 992) {
-	  		$('.header-location').css("display", "block");
-	  		$('.header-location').css( "right", 0 +'px' );
-
-	  		$('.header-date').css("display", "block");
-	  		$('.header-date').css( "left", 0 +'px' );
-
-	  		$('.header-info').css( "height", $('.header-location').height() + $('.header-date').height()+'px');
-	  		$('.header-info').css( "top", 0+'px' );
-	  	}
-	  	else {
-	  		$('.header-info').css( "height", $('.header-location').height()+'px');
-	  		$('.header-info').css( "top", -($('.header-info').height() + 15)+'px' );
-
-	  		$('.header-location').css("display", "inline");
-	  		$('.header-location').css( "right", (($(document).width() / 2) + 50) +'px' );
-
-	  		$('.header-date').css("display", "inline");
-	  		$('.header-date').css( "left", (($(document).width() / 2) + 50) +'px' );
-	  	}
-	  }
-	  */
-	  $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top - ($(window).height() / 2 - target.height() / 2)
-              }, 1000);
-              return false;
-            }
-          }
-        });
-        
-        /*$('#form-row input').focus(function(){
-          $(this).data('placeholder',$(this).attr('placeholder'))
-          $(this).attr('placeholder','');
-        });
-
-        $('#form-row input').blur(function(){
-           $(this).attr('placeholder',$(this).data('placeholder'));
-        });
-        
-        $('#registration-form').submit(function(event) {
-        	event.preventDefault();
-        	
-        	var $form = $(this);
-        	var url = $form.attr('action');
-
-        	var btn = $('#submit-registration');
-        	btn.button('loading');
-        	
-        	var posting = $.post(url, $form.serialize());
-        	posting.done(function() {
-        		$('#form-row').html('Thank you for registering for VTHacks!');
-        	});
-        	posting.fail(function(jqXHR, textStatus, errorThrown) {
-        		if (jqXHR.status == 404) {
-        			$('#form-row').html("<div class='register'>Thank you for registering for VTHacks!</div>");
-        			$('#registration-alert').hide();
-        		}
-        		else {
-        			$('#registration-alert').show();
-        		}
-        	});
-        	posting.always(function() {
-        	  btn.button('reset');
-        	});
-        });
-      });*/
-
-
-
-	  $(document).ready(function() {
-	  	normalizeImageRow();
-	  	moveInfoTextToLogoTip();
-	  });
-	  $(window).resize(function() {
-	  	normalizeImageRow();
-	  	moveInfoTextToLogoTip();
-	  });
-	</script>
+  </script>
 </head>
 <body style="">
-	<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="http://static.ak.facebook.com/connect/xd_arbiter.php?version=40#channel=f32f04673c&amp;origin=http%3A%2F%2Fvthacks.com" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="https://s-static.ak.facebook.com/connect/xd_arbiter.php?version=40#channel=f32f04673c&amp;origin=http%3A%2F%2Fvthacks.com" style="border: none;"></iframe></div></div></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+	<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
 
 	<section class="section-home">
 
@@ -331,7 +234,7 @@
 
 	<section class="section-details">
 			<div class="row featurette">
-				<div class="col-md-12">
+				<div class="col-md-12" style="background:#484848">
       				<p class="featurette" style="padding:1em; text-align: center; color: #2dc3b7">We are students from Virginia Tech and we will leave a mark on this society.</p>
       			</div>
 			</div>	
@@ -347,7 +250,7 @@
   <div class="row featurette" style="color:black;">
     <div class="col-md-7">
       <p class="featurette" style="text-indent: 1em;" >Zawad <br>
-        <span class="text-muted" style="padding-left: 3em;">Chowdhury</span></p>
+        <span class="text-muted" style="color:#fff; padding-left: 3em;">Chowdhury</span></p>
         <hr class="featurette-divider">
         <div class="col-md-6">
           <p class="lead" style="margin-left: 3em;">
@@ -376,7 +279,7 @@
       </div>
       <div class="col-md-7" style="color:black">
         <p class="featurette">Vishal <br>
-         <span class="text-muted" style="padding-left: 2em;">Sangam</span></p>
+         <span class="text-muted" style="color:#fff; padding-left: 2em;">Sangam</span></p>
          <hr class="featurette-divider">
          <div class="col-md-5">
           <p class="lead" style="margin-left: 1em;">
@@ -399,7 +302,7 @@
     <div class="row featurette" style="color:black;margin-top:100px;">
       <div class="col-md-7">
         <p class="featurette" style="text-indent: 1em;" >Joe <br>
-          <span class="text-muted" style="padding-left: 2em;">Fletcher</span></p>
+          <span class="text-muted" style="color:#fff; padding-left: 2em;">Fletcher</span></p>
           <hr class="featurette-divider">
           <div class="col-md-6">
             <p class="lead" style="margin-left: 3em;">
@@ -428,7 +331,7 @@
         </div>
         <div class="col-md-7" style="color:black">
           <p class="featurette">Shawn <br>
-           <span class="text-muted" style="padding-left: 2em;">Amjad</span></p>
+           <span class="text-muted" style="color:#fff; padding-left: 2em;">Amjad</span></p>
            <hr class="featurette-divider">
            <div class="col-md-5">
             <p class="lead" style="margin-left: 1em;">
@@ -468,5 +371,10 @@
 	</footer>
 
 
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-</body></html>
+
+</body>
+
+</html>
